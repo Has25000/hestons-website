@@ -1,0 +1,35 @@
+#links {
+    color: green
+}
+
+#title {
+    color: gold;
+    text-align: center;
+    background-color: green;
+
+}
+
+header {
+    background-color: green;
+    color: green;
+}
+
+/* .listofpages {
+    display: flex;
+    display: inline;
+    list-style: none;
+
+} */
+
+#pokemon {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#pokemondescription {
+   text-align: center; 
+}
+
+
+
