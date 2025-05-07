@@ -1,55 +1,67 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <meta charset="UTF-8">
-        <title>Fire</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Fire Pokémon</title>
         <link rel="stylesheet" href="style.css"/>
     </head>
 
     <header>
-
-        <h1>fire</h1>
+        <h1>Fire Pokémon</h1>
     </header>
-
 
     <body>
     <nav>
-        
         <ul>
-            <li><a href="homepage.html">Home</a></li>
+            <li><a href="index.html">Home</a></li>
             <li><a href="rare.html">Rare</a></li>
             <li><a href="dragon.html">Dragon</a></li>
         </ul>
     </nav>
 
+    <main>
+        <!-- Upload form section -->
+        <section class="upload-form">
+            <h2>Add New Pokémon Card</h2>
+            <form id="uploadForm">
+                <div class="form-group">
+                    <label for="cardName">Card Name:</label>
+                    <input type="text" id="cardName" required>
+                </div>
+                <div class="form-group">
+                    <label for="cardDescription">Card Description:</label>
+                    <textarea id="cardDescription" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="cardImage">Card Image:</label>
+                    <input type="file" id="cardImage" accept="image/*" required>
+                </div>
+                <button type="submit">Add Card</button>
+            </form>
+        </section>
 
+        <section class="card"> 
+            <h2>charizard v</h2>
+            <ul>
+                <li>
+                    <img src="images/IMG_8174 Background Removed.png" alt="Fire type Pokémon">
+                    <p>
+                        This powerful Fire-type Pokémon is known for its exceptional combat abilities and versatility. 
+                        Fire Pokémon are among the most popular types due to their impressive offensive capabilities and 
+                        striking visual designs. This particular card features a rare holographic finish that makes the 
+                        flames appear to dance across the card's surface. Fire-type Pokémon are highly valued in both 
+                        competitive play and collecting circles, as they can deal devastating damage while maintaining 
+                        good speed and special attack stats. Their ability to learn a wide range of moves makes them 
+                        formidable opponents in any battle.
+                    </p>
+                </li>
+            </ul>
+        </section>
 
+        <div id="cards-container"></div>
+    </main>
 
-
-    <section class="card"> 
-         <h2> charizard v</h2>
-        <ul>
-            <li>
-                <img src="images/IMG_8174 Background Removed.png" alt="Fire type Pokémon">
-                <p>
-                    This powerful Fire-type Pokémon is known for its exceptional combat abilities and versatility. 
-                    Fire Pokémon are among the most popular types due to their impressive offensive capabilities and 
-                    striking visual designs. This particular card features a rare holographic finish that makes the 
-                    flames appear to dance across the card's surface. Fire-type Pokémon are highly valued in both 
-                    competitive play and collecting circles, as they can deal devastating damage while maintaining 
-                    good speed and special attack stats. Their ability to learn a wide range of moves makes them 
-                    formidable opponents in any battle.
-                </p>
-            </li>
-        </ul>
-    </section>
-</body>
-
-
-
-
-
-
-
-
+    <script src="script.js"></script>
+    </body>
 </html>

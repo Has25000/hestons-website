@@ -14,13 +14,34 @@
 
 <nav>
     <ul>
-        <li><a href="homepage.html">Home</a></li>
+        <li><a href="index.html">Home</a></li>
         <li><a href="dragon.html">Dragon</a></li>
         <li><a href="fire.html">fire</a></li>
     </ul>
 </nav>
 
 <main>
+
+    <!-- Upload form section -->
+    <section class="upload-form">
+        <h2>Add New Pokémon Card</h2>
+        <form id="uploadForm">
+            <div class="form-group">
+                <label for="cardName">Card Name:</label>
+                <input type="text" id="cardName" required>
+            </div>
+            <div class="form-group">
+                <label for="cardDescription">Card Description:</label>
+                <textarea id="cardDescription" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="cardImage">Card Image:</label>
+                <input type="file" id="cardImage" accept="image/*" required>
+            </div>
+            <button type="submit">Add Card</button>
+        </form>
+    </section>
+
     <section class="card">
         <h2>Arceus</h2>
         <img src="arcus.jpg" alt="Arceus card">
@@ -58,7 +79,11 @@
             tends to appreciate over time.
         </p>
     </section>
+
+    <div id="cards-container"></div>
+
 </main>
 
+<script src="script.js"></script>
 </body>
 </html>

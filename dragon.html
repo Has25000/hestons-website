@@ -1,28 +1,59 @@
 <!DOCTYPE html>
-<html>
-<header>
-    Dragon
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dragon Pokémon</title>
     <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    <header>
+        <h1>Dragon Pokémon</h1>
+    </header>
 
-</header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="rare.html">Rare</a></li>
+            <li><a href="fire.html">fire</a></li>
+        </ul>
+    </nav>
 
-<nav>
-    <ul>
-        <li><a href="homepage.html">Home</a></li>
-        <li><a href="rare.html">Rare</a></li>
-        <li><a href="fire.html">fire</a></li>
-    </ul>
-</nav>
+    <main>
+        <!-- Upload form section -->
+        <section class="upload-form">
+            <h2>Add New Pokémon Card</h2>
+            <form id="uploadForm">
+                <div class="form-group">
+                    <label for="cardName">Card Name:</label>
+                    <input type="text" id="cardName" required>
+                </div>
+                <div class="form-group">
+                    <label for="cardDescription">Card Description:</label>
+                    <textarea id="cardDescription" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="cardImage">Card Image:</label>
+                    <input type="file" id="cardImage" accept="image/*" required>
+                </div>
+                <button type="submit">Add Card</button>
+            </form>
+        </section>
 
-<section class="card">
-    <h2> charizard</h2>
-    <ul>
-        <li>
-            <img src="images/IMG_8175 Background Removed.png" alt="Charizard card">    
-            <p>This Charizard is a golden card so it is rare and hard to get. Golden cards are very rare and hard to get. They are very good at beating other Pokémon and they are very good at running and they are very good at swimming.  
-                Golden cards are extra special because they shine and stand out from regular cards. They are usually only found in special packs and are super valuable. This golden Charizard is not just strong in battle—it's also one of the coolest-looking cards you can have in your collection.</p>
-        </li>
-    </ul>
-</section>
+        <section class="card">
+            <h2>charizard</h2>
+            <ul>
+                <li>
+                    <img src="images/IMG_8175 Background Removed.png" alt="Charizard card">    
+                    <p>This Charizard is a golden card so it is rare and hard to get. Golden cards are very rare and hard to get. They are very good at beating other Pokémon and they are very good at running and they are very good at swimming.  
+                        Golden cards are extra special because they shine and stand out from regular cards. They are usually only found in special packs and are super valuable. This golden Charizard is not just strong in battle—it's also one of the coolest-looking cards you can have in your collection.</p>
+                </li>
+            </ul>
+        </section>
 
+        <div id="cards-container"></div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
 </html>
